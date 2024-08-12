@@ -34,7 +34,6 @@ function paintGreetings(userName) {
   } else if (hours >= 19 && hours < 24) {
     greeting.innerText = `Bonsoir, ${userName} !`;
   }
-  // greeting.innerText = `hello ${userName}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
