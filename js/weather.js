@@ -15,8 +15,6 @@ function hideLoadingSpinner() {
 }
 
 function onGeoOk(position) {
-  const lat = position.coords.latitude;
-  const lon = position.coords.longitude;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=Genève&appid=${API_KEY}&units=metric`;
   const url2 = `https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=${API_KEY}&units=metric`;
 
