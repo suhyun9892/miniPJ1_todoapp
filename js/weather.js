@@ -50,5 +50,6 @@ function onGeoError() {
   alert("Can't find you. No weather for you.");
 }
 document.addEventListener("DOMContentLoaded", function () {
+  showLoadingSpinner();
   navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 });
