@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./icons8-todo-list-32.png"
+    />
+    <script defer src="js/greeting.js"></script>
+    <script defer src="js/clock.js"></script>
+    <script defer src="js/quotes.js"></script>
+    <script defer src="js/background.js"></script>
+    <script defer src="js/todo.js"></script>
+    <script defer src="js/weather.js"></script>
+
+    <title>To Do App</title>
+  </head>
+
+  <body>
+    <div id="weather">
+      <div id="loadingSpinner"></div>
+      <span id="geneve">
+        <h3></h3>
+        <h3></h3>
+      </span>
+      <h2 id="clock_geneve">00:00:00</h2>
+      <div id="loadingSpinner2"></div>
+      <span id="seoul">
+        <h3></h3>
+        <h3></h3>
+      </span>
+      <h2 id="clock">00:00:00</h2>
+    </div>
+
+    <div id="contents">
+      <div id="form">
+        <form id="login-form" class="">
+          <input
+            id="submit_field"
+            required
+            maxlength="15"
+            type="text"
+            autocomplete="off"
+            placeholder="What is your name ?"
+          />
+          <input id="submit_button" type="submit" value="Log In" />
+        </form>
+      </div>
+      <h1 id="greeting" class="hidden"></h1>
+      <div id="todo_section">
+        <div class="todoForm">
+          <form id="todo-form">
+            <input type="text" placeholder="Put your plans here !" required />
+          </form>
+        </div>
+        <ul id="todo-list"></ul>
+      </div>
+
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </body>
+</html>
