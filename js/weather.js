@@ -6,7 +6,7 @@ function toggleLoadingSpinner(city, isShow) {
   document.querySelector(`#${city.id}`).style.display = isShow
     ? "none"
     : "block";
-  document.querySelector(`.loading.${city.id}`).style.display = isShow
+  document.querySelector(`.${city.id}`).style.display = isShow
     ? "block"
     : "none";
 }

@@ -1,5 +1,5 @@
 const loginForm = document.querySelector("#login-form");
-const loginInput = loginForm.querySelector("#login-form input");
+const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 const HIDDEN_CLASSNAME = "hidden"; // string만 포함된 변수는 대문자로 쓰는게 관습;
 const USERNAME_KEY = "username"; // string을 반복적으로 사용할 경우 변수로 선언하는게 좋음;
